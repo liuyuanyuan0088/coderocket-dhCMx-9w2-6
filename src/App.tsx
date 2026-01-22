@@ -5,6 +5,7 @@ import InvestmentPage from './pages/InvestmentPage';
 import TeamPage from './pages/TeamPage';
 import ContactPage from './pages/ContactPage';
 import ProductDetailPage from './pages/ProductDetailPage';
+import RequestInfo from './pages/RequestInfo';
 import NotFound from './NotFound';
 import { ContentProvider } from './contexts/ContentContext';
 import './globals.css';
@@ -12,7 +13,8 @@ function App() {
   return (
     <ContentProvider>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<RequestInfo />} />
+        <Route path="/home" element={<HomePage />} />
         <Route path="/investment" element={<InvestmentPage />} />
         <Route path="/team" element={<TeamPage />} />
         <Route path="/contact" element={<ContactPage />} />
